@@ -39,7 +39,7 @@ module.exports = class HTML extends React.Component {
 
 
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,600" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"/>
+        <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet" />
         <script src="//cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"/>
 
         {this.props.headComponents}

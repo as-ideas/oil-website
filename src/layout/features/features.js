@@ -6,7 +6,7 @@ require('./features.scss');
 const FeatureBox = (props) => {
   return <div className="feature-box">
     <div className="icon">
-      <div className="icon-round"><i className="fa fa-fire"/></div>
+      <div className="icon-round"><i className="fas fa-fire"/></div>
     </div>
     <div>
       <h4>{props.title}</h4>
@@ -22,7 +22,7 @@ class Features extends React.Component {
         <GreyBackgroundPart type="top"/>
         <div className="grey-background">
           <div className="features__headlines section-content">
-            <h6>FEATURES</h6>
+            <h6>PRODUCT</h6>
             <h2>OIL Features</h2>
           </div>
           <div className="features-content section-content">

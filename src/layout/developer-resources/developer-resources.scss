@@ -1,8 +1,8 @@
 @import '../variables';
 
-.features {
+.developer-resources {
 
-  .features__headlines {
+  .developer-resources-headlines {
     padding: 0;
     padding-top: 4vh;
 
@@ -12,7 +12,7 @@
 
   }
 
-  .features-content {
+  .developer-resources-content {
     padding-right: 80px;
 
     display: flex;
@@ -23,7 +23,7 @@
       padding-right: 0;
     }
 
-    .feature-box {
+    .developer-resource-box {
       flex: 1 1 260px;
       margin-right: 24px;
 
@@ -32,7 +32,7 @@
     }
 
     @mixin breakpoint-retina {
-      .feature-box {
+      .developer-resource-box {
         flex: 0 1 320px;
       }
     }

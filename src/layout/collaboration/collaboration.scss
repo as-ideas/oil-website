@@ -7,30 +7,6 @@
     margin-top: -30px;
   }
 
-  .collaboration-image__containter {
-
-    @include breakpoint-desktop-m {
-      padding: 0 24px;
-    }
-
-    .collaboration-image {
-      display: block;
-      max-width: 100%;
-      margin: auto;
-      margin-bottom: 200px;
-
-      border-radius: 20px;
-      box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.03);
-      background-color: #fcfcfc;
-      border: solid 0.8px #e0e8ed;
-
-      @include breakpoint-smartphone {
-        margin-bottom: 20px;
-      }
-
-    }
-  }
-
   p {
     max-width: 320px;
   }

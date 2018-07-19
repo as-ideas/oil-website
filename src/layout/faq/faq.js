@@ -1,4 +1,5 @@
 import React from "react";
+import GreyBackgroundPart from '../background/grey-background-part';
 
 require('./faq.scss');
 
@@ -33,24 +34,30 @@ class Faq extends React.Component {
   render() {
     return (
       <div id="faq" className="faq section">
-        <div className="faq-content section-content">
-          <div className="faq-titles">
-            <h6>SUPPORT</h6>
-            <h2>Frequently Asked Questions</h2>
-            <br/>
-          </div>
+        <GreyBackgroundPart type="top"/>
+        <div className="grey-background">
+          <div className="faq-content section-content">
+            <div className="faq-titles">
+              <h6>SUPPORT</h6>
+              <h2>Frequently Asked Questions</h2>
+              <br/>
+            </div>
 
-          {this.props.entries.map(edge => <FaqEntry key={edge.node.id} post={edge.node}/>)}
+            {this.props.entries.map(edge => <FaqEntry key={edge.node.id} post={edge.node}/>)}
 
-          <div className="faq-entry">
-            <div className="faq-entry__question">
-              <div className="faq-entry__contact-us">
-                <div>If you still have question, don’t hesitate and contact us.</div>
-                <div className="faq-entry__contact-us__arrow"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#105;&#108;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#97;&#115;&#105;&#100;&#101;&#97;&#115;&#46;&#100;&#101;">Contact us <img src={require('./arrow.svg')}/></a></div>
+            <div className="faq-entry">
+              <div className="faq-entry__question">
+                <div className="faq-entry__contact-us">
+                  <div>If you still have question, don’t hesitate and contact us.</div>
+                  <div className="faq-entry__contact-us__arrow">
+                    <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#105;&#108;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#97;&#115;&#105;&#100;&#101;&#97;&#115;&#46;&#100;&#101;">Contact us <img src={require('./arrow.svg')}/></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <GreyBackgroundPart type="bottom"/>
       </div>
     )
   }

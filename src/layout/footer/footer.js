@@ -16,7 +16,7 @@ class Footer extends React.Component {
             <ul>
               <li><a href="/#header" className="footer__link">Home</a></li>
               <li><a href="/#product" className="footer__link">Product</a></li>
-              <li><a href="/#features" className="footer__link">Features</a></li>
+              <li><a href="/#quickstart" className="footer__link">Developer</a></li>
               <li><a href="/#collaboration" className="footer__link">Collaboration</a></li>
               <li><a href="/#support" className="footer__link">Support</a></li>
               <li><a href="/#aboutus" className="footer__link">About us</a></li>

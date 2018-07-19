@@ -48,7 +48,7 @@ class Header extends React.Component {
           </div>
           <div className="header-menu">
             <MenuEntry text="Product" link="/#product"/>
-            <MenuEntry text="Features" link="/#features"/>
+            <MenuEntry text="Developer" link="/#quickstart"/>
             <MenuEntry text="Collaboration" link="/#collaboration"/>
             <MenuEntry text="Support" link="/#support"/>
             <MenuEntry text="About us" link="/#aboutus"/>
@@ -67,11 +67,11 @@ class Header extends React.Component {
           (this.state.expanded ?
             <div className="burger-menu-content">
               <div className="burger-menu-content__list">
-                <MenuEntry text="Product" link="#product" onClick={this.hideMenu.bind(this)}/>
-                <MenuEntry text="Developer" link="#developer" onClick={this.hideMenu.bind(this)}/>
-                <MenuEntry text="Collaboration" link="#collaboration" onClick={this.hideMenu.bind(this)}/>
-                <MenuEntry text="Support" link="#support" onClick={this.hideMenu.bind(this)}/>
-                <MenuEntry text="About us" link="#aboutus" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Product" link="/#product" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Developer" link="/#quickstart" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Collaboration" link="/#collaboration" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Support" link="/#support" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="About us" link="/#aboutus" onClick={this.hideMenu.bind(this)}/>
               </div>
             </div>
             : '')
