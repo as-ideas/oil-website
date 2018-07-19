@@ -21,7 +21,7 @@ class TechnicalDetails extends React.Component {
                 <li><i className="fa fa-li fa-angle-right"/> Automated Browserstack Testfarm (Multibrowser, Desktop, Android, iOS).</li>
                 <li><i className="fa fa-li fa-angle-right"/> Continuous Integration with Jenkins.</li>
                 <li><i className="fa fa-li fa-angle-right"/> Load tested with 2.000 requests per second.</li>
-                <li><i className="fa fa-li fa-angle-right"/> Heavy duty hosting with CDN and it's continously scalable.</li>
+                <li><i className="fa fa-li fa-angle-right"/> Heavy duty hosting with CDN and it's continuously scalable.</li>
               </ul>
             </div>
             <div className="technical-details-right right">

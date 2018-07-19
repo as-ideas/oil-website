@@ -3,13 +3,7 @@
 .features {
 
   .features__headlines {
-    padding: 0;
     padding-top: 4vh;
-
-    @include breakpoint-smartphone {
-      padding: 0 20px;
-    }
-
   }
 
   .features-content {

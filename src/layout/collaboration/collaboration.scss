@@ -1,7 +1,6 @@
 @import '../variables';
 
 .collaboration {
-  margin-top: -80px;
 
   @include breakpoint-desktop-m {
     margin-top: -30px;
