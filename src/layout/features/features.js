@@ -1,6 +1,5 @@
 import React from "react";
 import GreyBackgroundPart from '../background/grey-background-part';
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 require('./features.scss');
 
@@ -19,39 +18,37 @@ const FeatureBox = (props) => {
 class Features extends React.Component {
   render() {
     return (
-      <ScrollableAnchor id={'features'}>
-        <div id="features" className="features section">
-          <GreyBackgroundPart type="top"/>
-          <div className="grey-background">
-            <div className="features__headlines section-content">
-              <h6>FEATURES</h6>
-              <h2>OIL Features</h2>
-            </div>
-            <div className="features-content section-content">
-              <FeatureBox title="High performance / Low latency">
-                Optimized to ensure maximum performance. Every millisecond counts.
-              </FeatureBox>
-              <FeatureBox title="Fully customizable">
-                Customize from your banner text, design, location to CPC design according to your needs.
-
-              </FeatureBox>
-              <FeatureBox title="Easy to implement">
-                Simply insert a javascript file in your website. <a href="" target="_blank">Find out more in our documentation.</a>
-              </FeatureBox>
-              <FeatureBox title="High transparency for users">
-                Simple and customizable user interface informs your user and allows cookie management on a granular level.
-              </FeatureBox>
-              <FeatureBox title="Adjustable to regulatory situation">
-                OIL gives you the flexibility to react to regulatory changes in the short term. Use OIL as an Opt-out tool either natively integrated into the privacy policy or displayed on a banner.
-              </FeatureBox>
-              <FeatureBox title="A/B testing capability ">
-                Improve your consent conversion by testing it.
-              </FeatureBox>
-            </div>
+      <div id="features" className="features section">
+        <GreyBackgroundPart type="top"/>
+        <div className="grey-background">
+          <div className="features__headlines section-content">
+            <h6>FEATURES</h6>
+            <h2>OIL Features</h2>
           </div>
-          <GreyBackgroundPart type="bottom"/>
+          <div className="features-content section-content">
+            <FeatureBox title="High performance / Low latency">
+              Optimized to ensure maximum performance. Every millisecond counts.
+            </FeatureBox>
+            <FeatureBox title="Fully customizable">
+              Customize from your banner text, design, location to CPC design according to your needs.
+
+            </FeatureBox>
+            <FeatureBox title="Easy to implement">
+              Simply insert a javascript file in your website. <a href="" target="_blank">Find out more in our documentation.</a>
+            </FeatureBox>
+            <FeatureBox title="High transparency for users">
+              Simple and customizable user interface informs your user and allows cookie management on a granular level.
+            </FeatureBox>
+            <FeatureBox title="Adjustable to regulatory situation">
+              OIL gives you the flexibility to react to regulatory changes in the short term. Use OIL as an Opt-out tool either natively integrated into the privacy policy or displayed on a banner.
+            </FeatureBox>
+            <FeatureBox title="A/B testing capability ">
+              Improve your consent conversion by testing it.
+            </FeatureBox>
+          </div>
         </div>
-      </ScrollableAnchor>
+        <GreyBackgroundPart type="bottom"/>
+      </div>
     )
   }
 }

@@ -13,10 +13,6 @@ import AboutUs from '../layout/aboutus/aboutus';
 import Press from '../layout/press/press';
 import Support from "../layout/support/support";
 
-import { configureAnchors } from 'react-scrollable-anchor'
-
-configureAnchors({offset: 0, scrollDuration: 100})
-
 export default ({data}) => {
 
   return <div>

@@ -1,6 +1,5 @@
 import React from "react";
 import LinkButton from '../button/link-button';
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 require('./header.scss');
 
@@ -37,49 +36,47 @@ class Header extends React.Component {
 
   render() {
     return (
-      <ScrollableAnchor id={'header'}>
-        <div id="header" className="header">
-          <div className="header-content">
-            <div className="header-logo">
-              <div className="header-logo__image">
-                <a href="/#header" className="home-link"><img src={require('./logo.svg')}/></a>
-              </div>
-              <div className="header-logo__text">
-                <a href="/#header" className="home-link">oil.js</a>
-              </div>
+      <div id="header" className="header">
+        <div className="header-content">
+          <div className="header-logo">
+            <div className="header-logo__image">
+              <a href="/#header" className="home-link"><img src={require('./logo.svg')}/></a>
             </div>
-            <div className="header-menu">
-              <MenuEntry text="Product" link="#product"/>
-              <MenuEntry text="Features" link="#features"/>
-              <MenuEntry text="Collaboration" link="#collaboration"/>
-              <MenuEntry text="Support" link="#support"/>
-              <MenuEntry text="About us" link="#aboutus"/>
-
-              <LinkButton text="Sandbox" cssClass="menu-button blue-design"/>
-              <LinkButton text="Github" cssClass="menu-button"/>
-
-              <li className='header-menu__burger-toggle' onClick={this.toggleMenu.bind(this)}>
-                <IconBurger/>
-              </li>
+            <div className="header-logo__text">
+              <a href="/#header" className="home-link">oil.js</a>
             </div>
           </div>
-          <div className="header__divider"/>
+          <div className="header-menu">
+            <MenuEntry text="Product" link="/#product"/>
+            <MenuEntry text="Features" link="/#features"/>
+            <MenuEntry text="Collaboration" link="/#collaboration"/>
+            <MenuEntry text="Support" link="/#support"/>
+            <MenuEntry text="About us" link="/#aboutus"/>
 
-          {
-            (this.state.expanded ?
-              <div className="burger-menu-content">
-                <div className="burger-menu-content__list">
-                  <MenuEntry text="Product" link="#product" onClick={this.hideMenu.bind(this)}/>
-                  <MenuEntry text="Developer" link="#developer" onClick={this.hideMenu.bind(this)}/>
-                  <MenuEntry text="Collaboration" link="#collaboration" onClick={this.hideMenu.bind(this)}/>
-                  <MenuEntry text="Support" link="#support" onClick={this.hideMenu.bind(this)}/>
-                  <MenuEntry text="About us" link="#aboutus" onClick={this.hideMenu.bind(this)}/>
-                </div>
-              </div>
-              : '')
-          }
+            <LinkButton text="Sandbox" cssClass="menu-button blue-design"/>
+            <LinkButton text="Github" cssClass="menu-button"/>
+
+            <li className='header-menu__burger-toggle' onClick={this.toggleMenu.bind(this)}>
+              <IconBurger/>
+            </li>
+          </div>
         </div>
-      </ScrollableAnchor>
+        <div className="header__divider"/>
+
+        {
+          (this.state.expanded ?
+            <div className="burger-menu-content">
+              <div className="burger-menu-content__list">
+                <MenuEntry text="Product" link="#product" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Developer" link="#developer" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Collaboration" link="#collaboration" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Support" link="#support" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="About us" link="#aboutus" onClick={this.hideMenu.bind(this)}/>
+              </div>
+            </div>
+            : '')
+        }
+      </div>
     )
   }
 }

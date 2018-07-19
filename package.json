@@ -9,18 +9,18 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^1.9.250",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-sass": "^1.0.26",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
-    "node-sass": "^4.9.0",
-    "normalize.css": "^8.0.0",
-    "react-scrollable-anchor": "^0.6.1"
+    "anchorate": "1.2.3",
+    "gatsby": "1.9.274",
+    "gatsby-link": "1.6.40",
+    "gatsby-plugin-sass": "1.0.26",
+    "gatsby-source-filesystem": "1.5.39",
+    "gatsby-transformer-remark": "1.7.44",
+    "node-sass": "4.9.0",
+    "normalize.css": "8.0.0"
   },
   "engine-strict": true,
   "engines": {
-    "node": ">= 8.8 <9",
+    "node": ">= 8.8 < 9",
     "npm": ">= 6.0"
   }
 }
