@@ -12,6 +12,9 @@ import Collaboration from '../layout/collaboration/collaboration';
 import AboutUs from '../layout/aboutus/aboutus';
 import Press from '../layout/press/press';
 import Support from "../layout/support/support";
+import DeveloperResources from '../layout/developer-resources/developer-resources';
+import Quickstart from '../layout/quickstart/quickstart';
+import TechnicalDetails from '../layout/technical-details/technical-details';
 
 export default ({data}) => {
 
@@ -21,6 +24,9 @@ export default ({data}) => {
     <Hero/>
     <Product/>
     <Features/>
+    <Quickstart/>
+    <DeveloperResources/>
+    <TechnicalDetails/>
     <Collaboration/>
     <Support/>
     <Faq entries={data.faq.edges}/>

@@ -9,6 +9,15 @@
     }
 
     .product-right {
+
+      @include breakpoint-smartphone {
+        margin-top: 20px;
+      }
+      @include breakpoint-desktop-l {
+        margin-top: 20px;
+      }
+
+
       img.product-image {
         max-width: 100%;
         margin: auto;
