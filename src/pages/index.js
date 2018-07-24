@@ -18,7 +18,7 @@ import TechnicalDetails from '../layout/technical-details/technical-details';
 
 export default ({data}) => {
 
-  return <div>
+  return <div className="app-content">
     <Header/>
 
     <Hero/>
