@@ -38,8 +38,8 @@ module.exports = class HTML extends React.Component {
         <meta name="author" content="Axel Springer Ideas Engineering GmbH"/>
 
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,600" rel="stylesheet"/>
-        <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:300,400,600" rel="stylesheet"/>
+        <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet"/>
         <script src="//cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"/>
 
         {this.props.headComponents}

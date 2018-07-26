@@ -63,7 +63,7 @@ img {
     color: #283444;
   }
 
-  .h3 {
+  h3 {
     font-size: 26px;
     font-weight: 600;
     line-height: 1.15;
@@ -83,7 +83,7 @@ img {
   }
 
   p, li {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -196,11 +196,16 @@ img {
   }
 }
 
+.only-xs {
+  @include breakpoint-not-smartphone {
+    display: none !important;
+  }
+}
+
 .not-xs {
   @include breakpoint-smartphone {
-    display: none;
+    display: none !important;
   }
-
 }
 
 .corner-top-left-bevel {
