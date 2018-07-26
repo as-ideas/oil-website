@@ -9,6 +9,8 @@
   }
 
   .hero-content {
+    padding: 20px 0 0 158px;
+
     .hero-left {
       padding-top: 6vw;
       padding-right: $default-padding;
@@ -59,10 +61,14 @@
       padding-top: 3vh;
       float: right;
 
+      max-width: 100%;
+      overflow: hidden;
+
       img {
-        max-width: 100%;
+        max-width: initial;
         margin: auto;
         display: inline-block;
+        transform: rotate(-4deg);
 
         @include smoother-transition;
       }

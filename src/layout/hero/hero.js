@@ -9,7 +9,7 @@ class Hero extends React.Component {
   render() {
     return (
       <div id="hero" className="hero section">
-        <GreyBackgroundPart type="top" />
+        <GreyBackgroundPart type="top"/>
         <div className="grey-background">
           <div className="hero-content section-content">
             <div className="two-cols">
@@ -18,17 +18,17 @@ class Hero extends React.Component {
                 <p>OIL is a holistic consent management platform that enables your compliance with GDPR and ePrivacy.
                   It is open-source, based on the IAB TCF Standard and is currently being developed by a collaboration of international publishers. </p>
 
-                <LinkButton text="Sandbox" cssClass="hero-button light-blue-design" />
-                <LinkButton text="Github" cssClass="hero-button dark-blue-design" />
+                <LinkButton text="Sandbox" cssClass="hero-button light-blue-design"/>
+                <LinkButton text="Github" cssClass="hero-button dark-blue-design"/>
                 <CollaborateLink/>
               </div>
               <div className="hero-right right">
-                <img src={require('./mutli-devices.png')}/>
+                <img src={require('./images/section-hero.png')}/>
               </div>
             </div>
           </div>
         </div>
-        <GreyBackgroundPart type="bottom" />
+        <GreyBackgroundPart type="bottom"/>
       </div>
     )
   }

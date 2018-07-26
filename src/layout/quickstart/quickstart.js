@@ -7,9 +7,6 @@ class Quickstart extends React.Component {
   render() {
     return (
       <div id="quickstart" className="quickstart section">
-        <div className="quickstart-image__container">
-          <img className="quickstart-image" src={require('./badmovie.jpg')}/>
-        </div>
         <div className="quickstart-content section-content">
           <h6>DEVELOPER</h6>
           <h2>Quickstart</h2>

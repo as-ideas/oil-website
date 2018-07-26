@@ -15,6 +15,7 @@ import Support from "../layout/support/support";
 import DeveloperResources from '../layout/developer-resources/developer-resources';
 import Quickstart from '../layout/quickstart/quickstart';
 import TechnicalDetails from '../layout/technical-details/technical-details';
+import ProductImageSlider from "../layout/product-image-slider/product-image-slider";
 
 export default ({data}) => {
 
@@ -24,6 +25,7 @@ export default ({data}) => {
     <Hero/>
     <Product/>
     <Features/>
+    <ProductImageSlider/>
     <Quickstart/>
     <DeveloperResources/>
     <TechnicalDetails/>

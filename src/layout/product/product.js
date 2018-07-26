@@ -55,7 +55,7 @@ class Product extends React.Component {
             </div>
 
             <div className="product-right right">
-              <img className="product-image" src={require('./privacy-policy.jpg')}/>
+              <img className="product-image" src={require('./images/section-product.png')}/>
               <p>Examples include:</p>
 
               <ul className="product-examples">

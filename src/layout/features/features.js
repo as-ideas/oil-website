@@ -6,7 +6,7 @@ require('./features.scss');
 const FeatureBox = (props) => {
   return <div className="feature-box">
     <div className="icon">
-      <div className="icon-round"><i className="fas fa-fire"/></div>
+      <div className="icon-round"><img src={require(props.icon)}/></div>
     </div>
     <div>
       <h4>{props.title}</h4>
@@ -26,23 +26,23 @@ class Features extends React.Component {
             <h2>OIL Features</h2>
           </div>
           <div className="features-content section-content">
-            <FeatureBox title="High performance / Low latency">
+            <FeatureBox title="High performance / Low latency" icon="./images/features_performance.svg">
               Optimized to ensure maximum performance. Every millisecond counts.
             </FeatureBox>
-            <FeatureBox title="Fully customizable">
+            <FeatureBox title="Fully customizable" icon="./images/features_custom.svg">
               Customize from your banner text, design, location to CPC design according to your needs.
 
             </FeatureBox>
-            <FeatureBox title="Easy to implement">
+            <FeatureBox title="Easy to implement" icon="./images/features_implement.svg">
               Simply insert a javascript file in your website. <a href="" target="_blank">Find out more in our documentation.</a>
             </FeatureBox>
-            <FeatureBox title="High transparency for users">
+            <FeatureBox title="High transparency for users" icon="./images/features_transparent.svg">
               Simple and customizable user interface informs your user and allows cookie management on a granular level.
             </FeatureBox>
-            <FeatureBox title="Adjustable to regulatory situation">
+            <FeatureBox title="Adjustable to regulatory situation" icon="./images/features_adjust.svg">
               OIL gives you the flexibility to react to regulatory changes in the short term. Use OIL as an Opt-out tool either natively integrated into the privacy policy or displayed on a banner.
             </FeatureBox>
-            <FeatureBox title="A/B testing capability ">
+            <FeatureBox title="A/B testing capability" icon="./images/features_ab.svg">
               Improve your consent conversion by testing it.
             </FeatureBox>
           </div>

@@ -21,7 +21,6 @@ class LinkButton extends React.Component {
       </a>
     )
   }
-
-};
+}
 
 export default LinkButton;
