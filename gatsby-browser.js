@@ -15,14 +15,19 @@ exports.onRouteUpdate = () => {
 // cf. https://github.com/cferdinandi/smooth-scroll && cf. src/html.js:42 for CDN including
 exports.onClientEntry = () => {
   document.addEventListener("DOMContentLoaded", function (event) {
+    var hash = window.location.hash;
 
     // do some scrolling if page was opened with hash-link
-    if (window.location.hash) {
-      new SmoothScroll().animateScroll(
-        document.querySelector(window.location.hash),
-        null,
-        {offset: -50}
-      );
+    if (hash) {
+      window.setTimeout(
+        function () {
+          new SmoothScroll().animateScroll(
+            document.querySelector(hash),
+            null,
+            {offset: 50}
+          )
+        }, 100);
+
     }
 
     new SmoothScroll('a[href*="#"]', {

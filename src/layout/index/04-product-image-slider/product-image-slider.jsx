@@ -19,7 +19,7 @@ const settings = {
       settings: {
         // arrows: false,
         // centerMode: true,
-        centerPadding: '20px',
+        // centerPadding: '20px',
         slidesToShow: 1
       }
     }

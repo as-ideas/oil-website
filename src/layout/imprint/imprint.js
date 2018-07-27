@@ -5,8 +5,8 @@ require('./imprint.scss');
 class Imprint extends React.Component {
   render() {
     return (
-      <div className="section">
-        <div className="imprint section-content">
+      <div className="imprint section">
+        <div className="imprint-content section-content">
           <h1>Privacy policy of OIL-JS</h1>
 
           <p>We are very pleased about your interest in <b>OIL.JS</b>. To be able to offer <b>OIL.JS</b>, we of course require certain data about you. We take

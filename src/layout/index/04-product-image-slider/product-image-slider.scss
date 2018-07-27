@@ -5,12 +5,28 @@
 .product-image-slider {
   overflow: hidden;
 
+  @include breakpoint-smartphone {
+    padding: 0 10px;
+  }
+
   .slick-slider {
     .slick-arrow {
       &:before {
         font-size: 30px;
         color: #7c5ae8;
+
       }
+
+      @include breakpoint-smartphone {
+        &.slick-prev {
+          left: -25px;
+        }
+
+        &.slick-next {
+          right: -15px;
+        }
+      }
+
     }
 
     .product-image-slider__item {
