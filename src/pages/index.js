@@ -1,21 +1,21 @@
 import React from "react"
 import Header from '../layout/header/header';
 import Footer from '../layout/footer/footer';
-import Hero from '../layout/hero/hero';
 
 import 'normalize.css';
 import './../layout/app.scss';
-import Product from '../layout/product/product';
-import Features from '../layout/features/features';
-import Faq from '../layout/faq/faq';
-import Collaboration from '../layout/collaboration/collaboration';
-import AboutUs from '../layout/aboutus/aboutus';
-import Press from '../layout/press/press';
-import Support from "../layout/support/support";
-import DeveloperResources from '../layout/developer-resources/developer-resources';
-import Quickstart from '../layout/quickstart/quickstart';
-import TechnicalDetails from '../layout/technical-details/technical-details';
-import ProductImageSlider from "../layout/product-image-slider/product-image-slider";
+import Hero from '../layout/index/01-hero/hero';
+import Product from '../layout/index/02-product/product';
+import Features from '../layout/index/03-features/features';
+import ProductImageSlider from "../layout/index/04-product-image-slider/product-image-slider";
+import Quickstart from '../layout/index/05-quickstart/quickstart';
+import DeveloperResources from '../layout/index/06-developer-resources/developer-resources';
+import TechnicalDetails from '../layout/index/07-technical-details/technical-details';
+import Collaboration from '../layout/index/08-collaboration/collaboration';
+import Support from "../layout/index/09-support/support";
+import Faq from '../layout/index/10-faq/faq';
+import AboutUs from '../layout/index/11-aboutus/aboutus';
+import Press from '../layout/index/12-press/press';
 
 export default ({data}) => {
 

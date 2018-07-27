@@ -1,5 +1,5 @@
 import React from "react";
-import LinkButton from '../button/link-button';
+import LinkButton from '../index/button/link-button';
 
 require('./header.scss');
 

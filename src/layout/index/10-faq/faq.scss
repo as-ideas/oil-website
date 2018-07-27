@@ -1,0 +1,127 @@
+@import '../../variables';
+
+.faq {
+
+  .faq-content {
+    max-width: 945px;
+    margin: auto;
+
+    .faq-titles {
+      p, h2, h6 {
+        margin: auto;
+        text-align: center;
+      }
+
+      p {
+        max-width: initial;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .faq-entry {
+    padding: 15px;
+    border-top: solid 1px #e0e8ed;
+
+    .faq-entry__question {
+      display: flex;
+      justify-content: space-between;
+
+      .faq-entry-text {
+        max-width: 80%;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: left;
+        color: #283444;
+      }
+
+      .faq-entry-expander {
+        flex: 0 0 32px;
+        width: 32px;
+        height: 32px;
+        background-color: #f0f2f8;
+        border-radius: 50%;
+
+        .faq-entry-round-expander {
+          text-align: center;
+          line-height: 32px;
+        }
+
+        transition: all 0.2s ease-out;
+
+        &.expanded {
+          transform: rotate(-180deg);
+        }
+
+      }
+
+      .faq-entry__contact-us {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: left;
+        color: #283444;
+
+        align-items: baseline;
+        width: 100%;
+
+        @include breakpoint-smartphone {
+          flex-direction: column;
+        }
+
+        .faq-entry__contact-us__arrow {
+
+          a {
+            color: #7c5ae8;
+            height: 20px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: normal;
+            letter-spacing: 0.6px;
+          }
+
+          @include breakpoint-smartphone {
+            margin-top: 24px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+
+    .faq-entry__content {
+      max-width: 800px;
+      overflow: hidden;
+
+      p {
+        margin: auto;
+        max-width: initial;
+      }
+
+      &.expanded {
+        padding: 36px;
+        max-height: 1000px;
+        transition: max-height 1.5s ease-out;
+      }
+
+      &.hidden {
+        transition: max-height 1s ease-in;
+
+        padding: 0;
+        height: 0;
+        max-height: 0;
+      }
+    }
+
+  }
+
+  .divider {
+
+  }
+
+}

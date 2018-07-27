@@ -17,7 +17,7 @@
     "gatsby-transformer-remark": "1.7.44",
     "node-sass": "4.9.0",
     "normalize.css": "8.0.0",
-    "react-slick": "^0.23.1",
+    "react-slick": "0.23.1",
     "slick-carousel": "^1.8.1"
   },
   "engine-strict": true,
