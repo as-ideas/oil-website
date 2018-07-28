@@ -21,12 +21,17 @@ $breakpoint-retina: 1440px;
   }
 }
 
+@mixin breakpoint-not-smartphone {
+  @media only screen and (min-width: $breakpoint-phone) {
+    @content;
+  }
+}
+
 @mixin breakpoint-desktop-m {
   @media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-desktop) {
     @content;
   }
 }
-
 
 @mixin breakpoint-desktop-l {
   @media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-retina) {

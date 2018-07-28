@@ -1,0 +1,82 @@
+@import '../../variables';
+
+.hero {
+  min-height: 790px;
+  margin-top: 20px;
+
+  @include breakpoint-smartphone {
+    margin-top: 0;
+  }
+
+  .hero-content {
+    padding: 20px 0 0 158px;
+
+    @include breakpoint-smartphone {
+      padding: 0 20px;
+    }
+
+    .hero-left {
+      padding-top: 6vw;
+      padding-right: $default-padding;
+
+      .hero-button {
+        display: inline-block;
+        width: 160px;
+        height: 45px;
+        border-radius: 4px;
+        color: #ffffff;
+
+        margin-right: 15px;
+
+        text-align: center;
+        line-height: 42px;
+
+        font-family: 'Source Code Pro', serif;
+        font-size: 16px;
+        letter-spacing: 0.6px;
+        margin-bottom: $default-padding;
+
+        text-decoration: none;
+
+        @include thicker-hover-shadow;
+
+        &.light-blue-design {
+          background-color: $light-blue;
+          &:hover {
+            background-color: $less-light-blue;
+          }
+        }
+
+        &.dark-blue-design {
+          background-color: $dark-blue;
+          &:hover {
+            background-color: $darker-blue;
+          }
+        }
+
+        @include breakpoint-smartphone {
+          width: 40%;
+        }
+      }
+
+    }
+
+    .hero-right {
+      padding-top: 3vh;
+      float: right;
+
+      max-width: 100%;
+      overflow: hidden;
+
+      img {
+        max-width: initial;
+        margin: auto;
+        display: inline-block;
+        transform: rotate(-4deg);
+
+        @include smoother-transition;
+      }
+    }
+  }
+
+}

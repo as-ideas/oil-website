@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.technical-details {
+
+  .technical-details-content {
+
+    .technical-details-right {
+      margin-top: 10em;
+      padding-left: 50px;
+
+      li {
+        line-height: 3rem;
+      }
+
+      @include breakpoint-smartphone {
+        margin-top: 20px;
+        padding-left: 0;
+      }
+    }
+  }
+}

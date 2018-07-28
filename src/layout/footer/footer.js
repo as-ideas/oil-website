@@ -1,5 +1,5 @@
 import React from "react";
-import LinkButton from '../button/link-button';
+import LinkButton from '../index/button/link-button';
 
 require('./footer.scss');
 
@@ -25,9 +25,9 @@ class Footer extends React.Component {
           <div className="footer-col__3">
             <h3>Other</h3>
             <ul>
-              <li><LinkButton text="Github" cssClass="footer__link" /></li>
-              <li><LinkButton text="Documentation" cssClass="footer__link" /></li>
-              <li><LinkButton text="Sandbox" cssClass="footer__link" /></li>
+              <li><LinkButton text="Github" cssClass="footer__link"/></li>
+              <li><LinkButton text="Documentation" cssClass="footer__link"/></li>
+              <li><LinkButton text="Sandbox" cssClass="footer__link"/></li>
             </ul>
           </div>
           <div className="footer-col__4">
@@ -35,7 +35,9 @@ class Footer extends React.Component {
             <ul>
               <li>Axel Springer SE</li>
               <li>Axel-Springer-Str. 65,<br/> 10888 Berlin</li>
-              <li><a href="mailto:hello@asideas.de" className="footer__link">hello@asideas.de</a></li>
+              <li>
+                <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#108;&#111;&#064;&#097;&#115;&#105;&#100;&#101;&#097;&#115;&#046;&#100;&#101;" className="footer__link">&#104;&#101;&#108;&#108;&#111;&#064;&#097;&#115;&#105;&#100;&#101;&#097;&#115;&#046;&#100;&#101;</a>
+              </li>
             </ul>
             <ul>
               <li><a href="/imprint" className="footer__link">Impressum &amp; Privacy Policy</a></li>
