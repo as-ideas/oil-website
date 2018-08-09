@@ -1,4 +1,5 @@
 import React from "react";
+import WebinarForm from "./../webinar-form/webinar-form.js";
 
 require('./support.scss');
 
@@ -9,6 +10,9 @@ class Support extends React.Component {
       <div id="support" className="support section">
         <div className="support__titles section-content">
           <h6>SUPPORT</h6>
+          <WebinarForm />
+        </div>
+        <div className="support__titles section-content">
           <h2>Contact & Additional Information</h2>
           <p>
             Want to know more about OIL?
