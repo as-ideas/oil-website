@@ -114,10 +114,9 @@ class Product extends React.Component {
 
 
         </div>
-        <
-        /div>
-        )
-        }
-        }
+      </div>
+    )
+  }
+}
 
-        export default Product;
+export default Product;

@@ -1,9 +1,11 @@
 import React from "react"
+
+// import 'normalize.css';
+// import './../layout/app.scss';
+
 import Header from '../layout/header/header';
 import Footer from '../layout/footer/footer';
 
-import 'normalize.css';
-import './../layout/app.scss';
 import Hero from '../layout/index/01-hero/hero';
 import Product from '../layout/index/02-product/product';
 import Features from '../layout/index/03-features/features';
