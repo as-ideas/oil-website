@@ -40,6 +40,7 @@ module.exports = class HTML extends React.Component {
         <meta name="author" content="Axel Springer Ideas Engineering GmbH"/>
 
         <script type="text/javascript" dangerouslySetInnerHTML={{__html: `${rawSmoothScrollScript}`}}/>
+        <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet"/>
 
         {this.props.headComponents}
         {css}
