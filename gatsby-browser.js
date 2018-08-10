@@ -1,4 +1,10 @@
+/**
+ * HINT: gatsby-browser.js is loaded at the root of your site
+ */
 import {anchorate} from 'anchorate'
+
+import 'normalize.css';
+import './src/layout/app.scss';
 
 exports.onRouteUpdate = () => {
   anchorate({
@@ -12,8 +18,14 @@ exports.onRouteUpdate = () => {
   })
 };
 
-// cf. https://github.com/cferdinandi/smooth-scroll && cf. src/html.js:42 for CDN including
+// cf. https://github.com/cferdinandi/smooth-scroll
 exports.onClientEntry = () => {
+
+  enableSmoothScolling();
+};
+
+
+function enableSmoothScolling() {
   document.addEventListener("DOMContentLoaded", function (event) {
     var hash = window.location.hash;
 
@@ -27,13 +39,13 @@ exports.onClientEntry = () => {
             {offset: 50}
           )
         }, 100);
-
     }
 
+    // Find all Links an add smoothscrolling with a little offset
     new SmoothScroll('a[href*="#"]', {
       offset: function (anchor, toggle) {
         return 50;
       },
     });
   });
-};
+}

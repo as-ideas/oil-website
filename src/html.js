@@ -9,6 +9,8 @@ if (process.env.NODE_ENV === `production`) {
   }
 }
 
+const rawSmoothScrollScript = require('!raw-loader!smooth-scroll/dist/smooth-scroll.polyfills.min.js');
+
 module.exports = class HTML extends React.Component {
   render() {
     let css;
@@ -37,10 +39,7 @@ module.exports = class HTML extends React.Component {
         <meta name="keywords" content="oiljs,oil,gdpr,cookie-banner,dsgvo,iab,cmp,opt-ins,opt-in,consent-management,consentcookie,consent-handling,consent,eprivacy,Axel Springer,Ideas Engineering,Axel Springer Ideas Engineering,Innovation,Software,Development,Product"/>
         <meta name="author" content="Axel Springer Ideas Engineering GmbH"/>
 
-
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:300,400,600" rel="stylesheet"/>
-        <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet"/>
-        <script src="//cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"/>
+        <script type="text/javascript" dangerouslySetInnerHTML={{__html: `${rawSmoothScrollScript}`}}/>
 
         {this.props.headComponents}
         {css}
@@ -57,4 +56,4 @@ module.exports = class HTML extends React.Component {
       </html>
     )
   }
-}
+};
