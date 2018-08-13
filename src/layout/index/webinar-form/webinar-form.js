@@ -54,7 +54,7 @@ class WebinarForm extends React.Component {
     return (
       <div className="webinar">
         <form onSubmit={this.handleSubmit}>
-          <h2>OIL Bi-Weekly Webinar</h2>
+          <h3>OIL Bi-Weekly Webinar</h3>
           <p>
             Join our webinar to learn more about OIL and to clear any remaining questions.
           </p>
@@ -73,7 +73,7 @@ class WebinarForm extends React.Component {
         </label>
         <label>
           E-Mail Address:
-          <input type="text" name="email" value={this.state.email} onChange={this.handleChange} />
+          <input type="email" name="email" value={this.state.email} onChange={this.handleChange} />
         </label>
         <input type="submit" value="Submit" className="webinar__submit-button " disabled={!this.inputOK()} />
 
