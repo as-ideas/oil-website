@@ -48,7 +48,7 @@ class WebinarForm extends React.Component {
 
   render () {
     let content = this.state.submitted ? (
-      <p>Thank you for your submission. We will get in touch with you with details on the next webinar shortly.</p>
+      <p className="webinar__success-message">Thank you for your submission! We will get in touch shortly with details on the next webinar.</p>
     ) : this.inputForm();
 
     return (
@@ -56,7 +56,7 @@ class WebinarForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <h2>OIL Bi-Weekly Webinar</h2>
           <p>
-            Join our webinar to learn more about OIL, its implementation and  questions.
+            Join our webinar to learn more about OIL and to clear any remaining questions.
           </p>
           {content}
         </form>
