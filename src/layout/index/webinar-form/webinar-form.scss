@@ -1,6 +1,6 @@
 @import '../../variables';
 
-.support .webinar {
+.webinar {
 
   p, h2, h3, h6 {
     margin: auto;
@@ -43,6 +43,17 @@
       border: 1px solid #ced4da;
       border-radius: .25rem;
     }
+
+    @media only screen and (max-width: $breakpoint-desktop) {
+      label {
+        width: 100%;
+        clear: both;
+      }
+
+      input[type="text"], input[type="email"] {
+        width: 95%;
+      }
+    }
   }
 
   .webinar__submit-button {
@@ -69,6 +80,11 @@
     &:disabled {
       background-color: $lighter-link-color;
     }
+
+    @media only screen and (max-width: $breakpoint-desktop) {
+      width: 19%;
+      margin: 1vh;
+    }
   }
 
   .webinar__success-message {
@@ -78,20 +94,6 @@
 
   @media only screen and (max-width: $breakpoint-desktop) {
     text-align: center;
-
-    .webinar__submit-button {
-      width: 19%;
-      margin: 1vh;
-    }
-
-    form label {
-      width: 100%;
-      clear: both;
-    }
-
-    form input[type="text"] {
-      width: 95%;
-    }
   }
 
 }
