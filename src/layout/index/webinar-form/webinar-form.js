@@ -42,7 +42,7 @@ class WebinarForm extends React.Component {
   }
 
   inputOK() {
-    return this.state.email !== '' && this.state.email.match(/@.*?\./) && this.state.name !== '' && this.state.submitting === false;
+    return this.state.email !== '' && this.state.name !== '' && this.state.submitting === false;
   }
 
   render () {
