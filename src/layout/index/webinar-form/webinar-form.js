@@ -11,13 +11,9 @@ class WebinarForm extends React.Component {
       submitting: false,
       submitted: false
     };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.submitComplete = this.submitComplete.bind(this);
   }
 
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     if(this.inputOK()){
       this.setState({
         submitting: true
@@ -28,13 +24,13 @@ class WebinarForm extends React.Component {
     event.preventDefault();
   }
 
-  submitComplete() {
+  submitComplete = () => {
     this.setState({
       submitted: true
     });
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value,
       submitting: false
