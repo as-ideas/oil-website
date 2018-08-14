@@ -19,7 +19,8 @@
     "normalize.css": "8.0.0",
     "react-slick": "0.23.1",
     "slick-carousel": "1.8.1",
-    "smooth-scroll": "^14.2.1"
+    "smooth-scroll": "14.2.1",
+    "ssl-express-www": "3.0.2"
   },
   "engine-strict": true,
   "engines": {
