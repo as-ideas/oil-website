@@ -19,7 +19,6 @@ class WebinarForm extends React.Component {
 
   handleSubmit(event) {
     if(this.inputOK()){
-      console.log('send data with: ', this.state.email, this.state.name);
       this.setState({
         submitting: true
       });
@@ -47,9 +46,15 @@ class WebinarForm extends React.Component {
   }
 
   render () {
-    let content = this.state.submitted ? (
-      <p className="webinar__success-message">Thank you for your submission! We will get in touch shortly with details on the next webinar.</p>
-    ) : this.inputForm();
+    let content;
+
+    if(this.state.submitted){
+      content = (
+        <p className="webinar__success-message">Thank you for your submission! We will get in touch shortly with details on the next webinar.</p>
+      )
+    } else {
+      content = this.inputForm();
+    };
 
     return (
       <div className="webinar">
