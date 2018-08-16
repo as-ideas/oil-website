@@ -92,6 +92,15 @@
     font-style: italic;
   }
 
+  .webinar__error-message {
+    font-weight: 400;
+    font-style: italic;
+    color: red;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
   @media only screen and (max-width: $breakpoint-desktop) {
     text-align: center;
   }
