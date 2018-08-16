@@ -6,7 +6,7 @@ class LinkButton extends React.Component {
 
     let href = this.props.href;
     if(!href && this.props.text === 'Sandbox') {
-      href = 'https://oil.axelspringer.com/sandbox/';
+      href = 'http://sandbox.oiljs.org/';
     }
     if(!href && this.props.text === 'Github') {
       href = 'https://github.com/as-ideas/oil';
