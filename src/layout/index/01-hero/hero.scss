@@ -9,13 +9,15 @@
   }
 
   .hero-content {
-    padding: 20px 0 0 158px;
-
     @include breakpoint-smartphone {
       padding: 0 20px;
     }
 
     .hero-left {
+      h1 {
+        max-width: 455px;
+      }
+
       padding-top: 6vw;
       padding-right: $default-padding;
 
@@ -61,19 +63,25 @@
 
     }
 
-    .hero-right {
-      padding-top: 3vh;
-      float: right;
-
-      max-width: 100%;
+    .hero-image {
+      padding-top: 10vh;
+      max-width: 900px;
       overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 20px;
+      text-indent: 50px;
+
+      @include breakpoint-desktop-m {
+        max-width: 600px;
+      }
+
+      @include breakpoint-smartphone {
+        display: none;
+      }
 
       img {
-        max-width: initial;
-        margin: auto;
-        display: inline-block;
-        transform: rotate(-4deg);
-
+        transform: rotate(-6deg);
         @include smoother-transition;
       }
     }

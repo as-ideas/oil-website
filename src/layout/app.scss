@@ -19,10 +19,9 @@ img {
   position: relative;
 
   .section-content {
-    max-width: 1124px;
+    max-width: 1180px;
     margin: auto;
 
-    padding: 20px 158px;
 
     @include breakpoint-desktop-m {
       padding: 20px 60px;
@@ -207,14 +206,4 @@ img {
   @include breakpoint-smartphone {
     display: none !important;
   }
-}
-
-.corner-top-left-bevel {
-  //border-style: solid;
-  //border-color: blue transparent red transparent;
-  //border-width: 0 0 100vw 50vw;
-
-  //border-left: 20vw solid white;
-  //border-top: 5vw solid transparent;
-  //border-bottom: 5vw solid transparent;
 }

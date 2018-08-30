@@ -21,13 +21,12 @@ class Hero extends React.Component {
                 <p>
                   It is open-source, based on the IAB TCF Standard and is currently being developed by a collaboration of international publishers.
                 </p>
-
                 <LinkButton text="Sandbox" cssClass="hero-button light-blue-design"/>
                 <LinkButton text="Github" cssClass="hero-button dark-blue-design"/>
                 <CollaborateLink/>
-              </div>
-              <div className="hero-right right">
-                <img src={require('./images/section-hero.png')}/>
+                <div className="hero-image">
+                  <img src={require('./images/section-hero.png')}/>
+                </div>
               </div>
             </div>
           </div>
