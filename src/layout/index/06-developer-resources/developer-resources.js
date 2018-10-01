@@ -30,7 +30,7 @@ class DeveloperResources extends React.Component {
             <h2>Resources</h2>
           </div>
           <div className="developer-resources-content section-content">
-            <ResourceBox title="Sandbox" url="http://oil.axelspringer.com/sandbox/" icon="./images/resources_sandbox.svg">
+            <ResourceBox title="Sandbox" url="https://sandbox.oiljs.org/" icon="./images/resources_sandbox.svg">
               See an interactive demonstration of the main features the Opt-in Layer provides.
             </ResourceBox>
             <ResourceBox title="GitHub" url="https://github.com/as-ideas/oil" icon="./images/resources_github.svg">
