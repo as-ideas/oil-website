@@ -72,11 +72,16 @@
       right: 20px;
       text-indent: 50px;
 
-      @include breakpoint-desktop-l {
-        display: none;
-      }
-      @include breakpoint-smartphone {
 
+      @include breakpoint-desktop-s {
+        max-width: 650px;
+      }
+
+      @include breakpoint-desktop-xs {
+        max-width: 450px;
+      }
+
+      @include breakpoint-smaller-as-desktop-xs {
         display: none;
       }
 
