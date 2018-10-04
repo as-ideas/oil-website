@@ -10,9 +10,16 @@ app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(compression());
 app.use(express.static(__dirname + '/public'));
 
+app.get('*', function(req, res, next) {
+  if (req.headers.host.slice(0, 3) !== 'www') {
+    res.redirect('http://www.' + req.headers.host + req.url, 301);
+  } else {
+    next();
+  }
+});
 
 app.get('*', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port, function () {
