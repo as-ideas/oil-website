@@ -46,7 +46,7 @@ $breakpoint-retina: 1440px;
 }
 
 @mixin breakpoint-desktop-s {
-  @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop-medium) {
+  @media only screen and (min-width: $breakpoint-desktop-small) and (max-width: $breakpoint-desktop-medium) {
     @content;
   }
 }
