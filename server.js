@@ -11,8 +11,8 @@ app.use(compression());
 app.use(express.static(__dirname + '/public'));
 
 app.get('*', function(req, res, next) {
+  console.log('Hello iam log: ', req, res, next);
   if (req.headers.host.slice(0, 3) !== 'www') {
-    console.log('Hello iam log: ', req, res, next);
     res.redirect('https://www.' + req.headers.host + req.url, 301);
   } else {
     next();
