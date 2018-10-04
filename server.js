@@ -19,9 +19,9 @@ app.get('*', function(req, res, next) {
   }
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(__dirname + '/public/index.html');
+// });
 
 app.listen(port, function () {
     console.log('server is now starting on port ', port);
