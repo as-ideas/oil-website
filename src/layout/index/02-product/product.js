@@ -43,7 +43,7 @@ class Product extends React.Component {
                     <div className="blue-number">2</div>
                   </div>
                   <p>
-                    <strong>>Best practice UI/UX –</strong> Collaboration between legal teams and product experts sets an industry standard for a compliant yet user-friendly interface.
+                    <strong>Best practice UI/UX –</strong> Collaboration between legal teams and product experts sets an industry standard for a compliant yet user-friendly interface.
                   </p>
                 </div>
                 <div className="divider"/>

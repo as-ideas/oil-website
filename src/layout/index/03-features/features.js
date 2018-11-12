@@ -31,7 +31,6 @@ class Features extends React.Component {
             </FeatureBox>
             <FeatureBox title="Fully customizable" icon="./images/features_custom.svg">
               Customize from your banner text, design, location to CPC design according to your needs.
-
             </FeatureBox>
             <FeatureBox title="Easy to implement" icon="./images/features_implement.svg">
               Simply insert a javascript file in your website. <a href="" target="_blank">Find out more in our documentation.</a>
