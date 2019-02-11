@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "anchorate": "1.2.3",
+    "btoa": "^1.2.1",
     "express-sslify": "1.2.0",
     "gatsby": "1.9.274",
     "gatsby-link": "1.6.40",
