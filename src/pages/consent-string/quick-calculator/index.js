@@ -153,14 +153,15 @@ export default class QuickCalculator extends React.Component {
         <div className="tooling-conent section-content">
           <h2>Quick calculator consent string v2 (current proposal)</h2>
           <h5>New in the "fixed size" part: LIPurposesAllowed, LIEncodingType, LIEstablishedForGVLDefault, LIBitFieldSection </h5>
+          <h5>New in the "dynamic size" part of the entries: PurposeId, Disallowed (+ 7 bits for each entry)</h5>
           <br/>
 
           {/* v2 with single vendor */}
           <div>
-            <h4 style={{margin: "8px 0"}}>Using Blacklist/Whitelist with single vendors</h4>
+            <h4 style={{margin: "8px 0"}}>Using Blacklist/Whitelist with single vendors (with only one purpose override per entry)</h4>
 
             <div style={{margin: "12px 8px"}}>
-              <div> Fixed: {FIXED_PART_V2} bits + 17 bits per entry</div>
+              <div> Fixed: {FIXED_PART_V2} bits + 24 bits per entry</div>
               <div>Number of blacklists/whitelist entries:</div>
               <input
                 value={this.state.value11}
@@ -183,7 +184,7 @@ export default class QuickCalculator extends React.Component {
             <h4 style={{margin: "8px 0"}}>Using Blacklist/Whitelist with single vendors</h4>
 
             <div style={{margin: "12px 8px"}}>
-              <div> Fixed: {FIXED_PART_V2} bits + 17 bits per entry</div>
+              <div> Fixed: {FIXED_PART_V2} bits + 40 bits per entry</div>
               <div>Number of blacklists/whitelist entries:</div>
               <input
                 value={this.state.value12}
