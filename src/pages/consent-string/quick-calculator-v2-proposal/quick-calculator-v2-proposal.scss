@@ -1,0 +1,88 @@
+@import '../../../../src/layout/variables';
+
+.quick-calculator {
+  margin: 30px 0;
+
+  .tooling-content {
+    max-width: 832px;
+    margin: auto;
+    min-height: 460px;
+  }
+
+  .tooler-header {
+    margin-bottom: 24px;
+  }
+
+  .tooling-result {
+    margin: 10px;
+
+    .tooling-result__result-box {
+      margin: 4px;
+      padding: 8px;
+      word-break: break-all;
+    }
+  }
+
+  h5 {
+    margin-bottom: 6px;
+  }
+
+  ul.hints {
+    margin: auto;
+
+    li {
+      max-width: initial;
+      padding: 4px 12px;
+      margin: 4px 3vw 4px 1vw;
+
+      @include breakpoint-smartphone {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .calc-form {
+    p {
+      max-width: initial;
+      margin-bottom: 1rem;
+    }
+
+    padding-bottom: 2rem;
+
+    label {
+      width: 40%;
+      display: inline-block;
+      margin-bottom: .5rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+    }
+
+    input[type="text"], input[type="number"] {
+      display: block;
+      width: 85%;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $link-color;
+      padding: .375rem .75rem;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-desktop) {
+      label {
+        width: 100%;
+        clear: both;
+      }
+
+      input[type="text"], input[type="email"] {
+        width: 95%;
+      }
+    }
+  }
+}
