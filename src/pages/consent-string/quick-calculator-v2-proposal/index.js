@@ -63,7 +63,7 @@ export default class QuickV2Calculator extends React.Component {
       <div className="quick-calculator section">
         <div className="tooling-content section-content">
           <h2 style={{marginBottom: "12px"}}>Calculator for TCF consent string v2 (current proposal #5, hybrid model)</h2>
-          <h5>New in the "fixed size" part: LIPurposesAllowed, LIEncodingType, LIEstablishedForGVLDefault, LIBitFieldSection (+ 26 Bits for each entry compared to version 1)</h5>
+          <h5>New in the "fixed size" part: LIPurposesAllowed, LIEncodingType, LIEstablishedForGVLDefault, LIBitFieldSection </h5>
           <h5>New in the "dynamic size" part is a field of bits for LI (1 Bit per vendor on GVL)</h5>
           <h5>New in the "dynamic size" part is a section of "Publisher Overrides", consisting of a dynamic number of entries</h5>
           <br/>
