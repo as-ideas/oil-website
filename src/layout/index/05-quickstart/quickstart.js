@@ -21,7 +21,9 @@ class Quickstart extends React.Component {
             <li><i className="fa fa-li fa-angle-right"/> Style your layer according to your style guide.</li>
             <li><i className="fa fa-li fa-angle-right"/> Create your own language pack.</li>
           </ul>
-          <p>For details on how to do this please consult our <a href="http://oil.axelspringer.com/docs/#quickstart" target="_blank">Opt-in Layer Quickstart Guide</a>.</p>
+          <p>For details on how to do this please consult our <a href="http://oil.axelspringer.com/docs/#quickstart" target="_blank">Opt-in Layer Quickstart Guide</a>
+            <br/>and you can find the <a href="https://oil.axelspringer.com/docs/last-release" target="_blank">latest documentation</a> online.
+          </p>
         </div>
       </div>
     )
