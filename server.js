@@ -7,7 +7,7 @@ const cors = require('cors');
 
 // Use enforce.HTTPS({ trustProtoHeader: true }) in case you are behind
 // a load balancer (e.g. Heroku).
-// app.use(enforce.HTTPS({ trustProtoHeader: true }));
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(compression());
 app.use(cors(), express.static(__dirname + '/public'));
 
