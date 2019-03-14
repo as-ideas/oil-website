@@ -39,7 +39,7 @@ class DeveloperResources extends React.Component {
             <ResourceBox title="Released Versions" url="http://oil.axelspringer.com/release/" icon="./images/resources_versions.svg">
               Find current and past releases of the Opt-in Layer, ready for download and integration.
             </ResourceBox>
-            <ResourceBox title="Documentation" url="http://oil.axelspringer.com/docs/" icon="./images/resources_documentation.svg">
+            <ResourceBox title="Documentation" url="https://oil.axelspringer.com/docs/last-release" icon="./images/resources_documentation.svg">
               Read our documentation to go deeper into the Opt-in Layer, its integration, configuration and customization.
             </ResourceBox>
             <ResourceBox title="Examples" url="http://oil.axelspringer.com/demos/" icon="./images/resources_examples.svg">
