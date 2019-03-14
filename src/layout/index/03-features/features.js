@@ -33,7 +33,7 @@ class Features extends React.Component {
               Customize from your banner text, design, location to CPC design according to your needs.
             </FeatureBox>
             <FeatureBox title="Easy to implement" icon="./images/features_implement.svg">
-              Simply insert a javascript file in your website. <a href="" target="_blank">Find out more in our documentation.</a>
+              Simply insert a javascript file in your website. <a href="https://oil.axelspringer.com/docs/last-release" target="_blank">Find out more in our documentation.</a>
             </FeatureBox>
             <FeatureBox title="High transparency for users" icon="./images/features_transparent.svg">
               Simple and customizable user interface informs your user and allows cookie management on a granular level.
