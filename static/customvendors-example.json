@@ -18,7 +18,9 @@
       "featureIds": [
         1,
         2
-      ]
+      ],
+      "optInSnippet": "wasConsentGiven=true;customVendor='customVendor1';activateCustomVendorDependentElements()",
+      "optOutSnippet": "wasConsentGiven=false;customVendor='customVendor1';activateCustomVendorDependentElements()"
     },
     {
       "id": "CUSTOM_VENDOR_2",
@@ -36,7 +38,9 @@
       "featureIds": [
         1,
         2
-      ]
+      ],
+      "optInSnippet": "wasConsentGiven=true;customVendor='customVendor2';activateCustomVendorDependentElements()",
+      "optOutSnippet": "wasConsentGiven=false;customVendor='customVendor2';activateCustomVendorDependentElements()"
     }
   ]
 }
