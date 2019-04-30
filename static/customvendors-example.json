@@ -19,8 +19,8 @@
         1,
         2
       ],
-      "optInSnippet": "wasConsentGiven=true;customVendor='customVendor1'",
-      "optOutSnippet": "wasConsentGiven=false;customVendor='customVendor1'"
+      "optInSnippet": "hasCustomVendor1Consent=true",
+      "optOutSnippet": "hasCustomVendor1Consent=false"
     },
     {
       "id": "CUSTOM_VENDOR_2",
@@ -39,8 +39,8 @@
         1,
         2
       ],
-      "optInSnippet": "wasConsentGiven=true;customVendor='customVendor2'",
-      "optOutSnippet": "wasConsentGiven=false;customVendor='customVendor2'"
+      "optInSnippet": "hasCustomVendor2Consent=true",
+      "optOutSnippet": "hasCustomVendor2Consent=false"
     }
   ]
 }
