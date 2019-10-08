@@ -7,7 +7,7 @@ const ResourceBox = (props) => {
   if (props.title) {
     return <div className="developer-resource-box">
       <div className="icon">
-        <div className="icon-round"><img src={require(props.icon)}/></div>
+        <div className="icon-round"><img src={require("" + props.icon)}/></div>
       </div>
       <div>
         <h4><a href={props.url} target="_blank">{props.title}</a></h4>

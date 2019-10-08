@@ -6,7 +6,7 @@ import {anchorate} from 'anchorate'
 import 'normalize.css';
 import './src/layout/app.scss';
 
-exports.onRouteUpdate = () => {
+export function onRouteUpdate  ()  {
   anchorate({
     scroller: function (element) {
       if (!element) {
@@ -19,7 +19,7 @@ exports.onRouteUpdate = () => {
 };
 
 // cf. https://github.com/cferdinandi/smooth-scroll
-exports.onClientEntry = () => {
+export function onClientEntry  ()  {
   enableSmoothScolling();
   loadDeferedStyles();
 };

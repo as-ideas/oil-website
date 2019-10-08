@@ -1,27 +1,9 @@
 import React from "react"
 
-let stylesStr;
-if (process.env.NODE_ENV === `production`) {
-  try {
-    stylesStr = require(`!raw-loader!../public/styles.css`)
-  } catch (e) {
-    console.log(e)
-  }
-}
+const rawSmoothScrollScript = require('!raw-loader!smooth-scroll/dist/smooth-scroll.polyfills.min.js').default;
 
-const rawSmoothScrollScript = require('!raw-loader!smooth-scroll/dist/smooth-scroll.polyfills.min.js');
-
-module.exports = class HTML extends React.Component {
+export default class HTML extends React.Component {
   render() {
-    let css;
-    if (process.env.NODE_ENV === `production`) {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{__html: stylesStr}}
-        />
-      )
-    }
     return (
       <html {...this.props.htmlAttributes}>
       <head>
@@ -39,10 +21,10 @@ module.exports = class HTML extends React.Component {
         <meta name="keywords" content="oiljs,oil,gdpr,cookie-banner,dsgvo,iab,cmp,opt-ins,opt-in,consent-management,consentcookie,consent-handling,consent,eprivacy,Axel Springer,Ideas Engineering,Axel Springer Ideas Engineering,Innovation,Software,Development,Product"/>
         <meta name="author" content="Axel Springer Ideas Engineering GmbH"/>
 
+        {/* Smooth Scrolling */}
         <script type="text/javascript" dangerouslySetInnerHTML={{__html: `${rawSmoothScrollScript}`}}/>
 
         {this.props.headComponents}
-        {css}
       </head>
       <body {...this.props.bodyAttributes}>
       {this.props.preBodyComponents}

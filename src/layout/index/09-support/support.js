@@ -18,7 +18,6 @@ class Support extends React.Component {
           </p>
         </div>
         <div className="support__titles section-content">
-          <WebinarForm />
         </div>
       </div>
     )

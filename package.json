@@ -10,19 +10,25 @@
   },
   "dependencies": {
     "anchorate": "1.2.3",
+    "normalize.css": "8.0.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "1.8.1",
+    "smooth-scroll": "14.2.1"
+  },
+  "devDependencies": {
     "btoa": "^1.2.1",
     "cors": "^2.8.5",
     "express-sslify": "1.2.0",
-    "gatsby": "1.9.274",
-    "gatsby-link": "1.6.40",
-    "gatsby-plugin-sass": "1.0.26",
-    "gatsby-source-filesystem": "1.5.39",
-    "gatsby-transformer-remark": "1.7.44",
-    "node-sass": "4.9.0",
-    "normalize.css": "8.0.0",
-    "react-slick": "0.23.1",
-    "slick-carousel": "1.8.1",
-    "smooth-scroll": "14.2.1"
+    "gatsby": "^2.15.29",
+    "gatsby-link": "^2.2.18",
+    "gatsby-plugin-sass": "^2.1.17",
+    "gatsby-source-filesystem": "^2.1.29",
+    "gatsby-transformer-remark": "^2.6.27",
+    "node-sass": "^4.12.0",
+    "raw-loader": "^3.1.0"
   },
   "engine-strict": true,
   "engines": {
