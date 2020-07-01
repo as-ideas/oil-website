@@ -1,5 +1,4 @@
 import React from "react";
-import CollaborateLink from '../collaborate-link/collaborate-link';
 import GreyBackgroundPart from '../background/grey-background-part';
 import LinkButton from '../button/link-button';
 
@@ -14,16 +13,18 @@ class Hero extends React.Component {
           <div className="hero-content section-content">
             <div className="two-cols">
               <div className="hero-left left">
-                <h1>OIL – fuel for your consent management.</h1>
+                <h1>OIL support ended.</h1>
                 <p>
-                  OIL is a holistic consent management platform that enables your compliance with GDPR and ePrivacy. The platform allows the user to manage their consent for data processing transparently and subsequently signals this information across the advertising supply chain as well as any other with OIL integrated vendor.
+                  We very much regret that we, the previous OIL development team, are no longer able to support the OIL project with
+                  immediate effect. It will not be developed any further by us and we will not provide any bugfixes or security patches from
+                  now on. As an open source project it will remain available. If you want to take over the project as a maintainer, please
+                  file an issue on the OIL GitHub project.
                 </p>
                 <p>
-                  It is open-source, based on the IAB TCF Standard and is currently being developed by a collaboration of international publishers.
+                  For this reason OIL.js is no longer a registered CMP and does not support TCF v2.0. If you want to continue using OIL or
+                  develop it further, please register yourself at <a href={"https://iabeurope.eu/tcf-for-cmps/"}>IAB</a>.
                 </p>
-                <LinkButton text="Sandbox" cssClass="hero-button light-blue-design"/>
                 <LinkButton text="Github" cssClass="hero-button dark-blue-design"/>
-                <CollaborateLink/>
                 <div className="hero-image">
                   <img src={require('./images/section-hero.png')}/>
                 </div>
