@@ -13,7 +13,7 @@ class Hero extends React.Component {
           <div className="hero-content section-content">
             <div className="two-cols">
               <div className="hero-left left">
-                <h1>OIL support ended.</h1>
+                <h1>OIL has been deprecated.</h1>
                 <p>
                   We very much regret that we, the previous OIL development team, are no longer able to support the OIL project with
                   immediate effect. It will not be developed any further by us and we will not provide any bugfixes or security patches from
