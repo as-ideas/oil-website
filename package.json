@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "btoa": "^1.2.1",
-    "gatsby": "^2.15.29",
+    "gatsby": "^5.5.0",
     "gatsby-link": "^2.2.18",
     "gatsby-plugin-sass": "^2.1.17",
     "gatsby-source-filesystem": "^2.1.29",
